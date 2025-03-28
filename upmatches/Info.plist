@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleGetInfoString</key>
+    <string></string>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Haffer-TRIAL-Thin.ttf</string>
+        <string>Haffer-TRIAL-ThinItalic.ttf</string>
+        <string>Haffer-TRIAL-ExtraLight.ttf</string>
+        <string>Haffer-TRIAL-ExtraLightItalic.ttf</string>
+        <string>Haffer-TRIAL-Light.ttf</string>
+        <string>Haffer-TRIAL-LightItalic.ttf</string>
+        <string>Haffer-TRIAL-Regular.ttf</string>
+        <string>Haffer-TRIAL-RegularItalic.ttf</string>
+        <string>Haffer-TRIAL-Medium.ttf</string>
+        <string>Haffer-TRIAL-MediumItalic.ttf</string>
+        <string>Haffer-TRIAL-SemiBold.ttf</string>
+        <string>Haffer-TRIAL-SemiBoldItalic.ttf</string>
+        <string>Haffer-TRIAL-Bold.ttf</string>
+        <string>Haffer-TRIAL-BoldItalic.ttf</string>
+        <string>Haffer-TRIAL-ExtraBold.ttf</string>
+        <string>Haffer-TRIAL-ExtraBoldItalic.ttf</string>
+        <string>Haffer-TRIAL-Black.ttf</string>
+        <string>Haffer-TRIAL-BlackItalic.ttf</string>
+    </array>
+</dict>
+</plist>
