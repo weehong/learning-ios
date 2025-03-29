@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		AD58A8342D8FE0ED00A20FCC /* Exceptions for "upmatches" folder in "upmatches" target */ = {
+		AD58A8342D8FE0ED00A20FCC /* Exceptions for "Upmatches" folder in "upmatches" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -40,12 +40,12 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		AD58A7F92D8FB3F400A20FCC /* upmatches */ = {
+		AD58A7F92D8FB3F400A20FCC /* Upmatches */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				AD58A8342D8FE0ED00A20FCC /* Exceptions for "upmatches" folder in "upmatches" target */,
+				AD58A8342D8FE0ED00A20FCC /* Exceptions for "Upmatches" folder in "upmatches" target */,
 			);
-			path = upmatches;
+			path = Upmatches;
 			sourceTree = "<group>";
 		};
 		AD58A80B2D8FB3F500A20FCC /* upmatchesTests */ = {
@@ -88,7 +88,7 @@
 		AD58A7EE2D8FB3F400A20FCC = {
 			isa = PBXGroup;
 			children = (
-				AD58A7F92D8FB3F400A20FCC /* upmatches */,
+				AD58A7F92D8FB3F400A20FCC /* Upmatches */,
 				AD58A80B2D8FB3F500A20FCC /* upmatchesTests */,
 				AD58A8152D8FB3F500A20FCC /* upmatchesUITests */,
 				AD58A7F82D8FB3F400A20FCC /* Products */,
@@ -121,7 +121,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				AD58A7F92D8FB3F400A20FCC /* upmatches */,
+				AD58A7F92D8FB3F400A20FCC /* Upmatches */,
 			);
 			name = upmatches;
 			packageProductDependencies = (
@@ -411,7 +411,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = upmatches/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -453,7 +453,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = upmatches/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
