@@ -1,46 +1,39 @@
 import SwiftUI
+import Auth0
 
 struct ContentView: View {
-  @State private var isNavigationActive = false
-
-  var body: some View {
-    NavigationStack {
-      VStack {
-        VStack {
-          Text("Upmatches")
-            .font(FontFamily.HafferTRIAL.bold.swiftUIFont(size: 34))
-          Text("Meet & play with like-minded sports people like you")
-            .font(FontFamily.HafferTRIAL.semiBold.swiftUIFont(size: 20))
-            .foregroundStyle(.secondary)
-            .multilineTextAlignment(.center)
-            .padding(.top, 4)
+    @State private var isAuthenticated = false
+    @State private var isAuthChecked = false
+    
+    var body: some View {
+        Group {
+            if isAuthenticated {
+                MainTabView(isAuthenticated: $isAuthenticated)
+            } else {
+                LoginView(isAuthenticated: $isAuthenticated)
+            }
         }
-        .frame(maxHeight: .infinity)
-
-        Spacer()
-
-        Button(action: {
-          isNavigationActive = true
-        }) {
-          Text("Login")
-            .font(FontFamily.HafferTRIAL.semiBold.swiftUIFont(size: 17))
-            .foregroundColor(.white)
-            .frame(maxWidth: .infinity)
-            .padding()
-            .background(.app)
-            .cornerRadius(25)
-            .textCase(.uppercase)
+        .onAppear {
+            if !isAuthChecked {
+                checkAuth()
+                isAuthChecked = true
+            }
         }
-        .navigationDestination(isPresented: $isNavigationActive) {
-          GameListView()
-        }
-      }
-      .frame(maxWidth: .infinity)
-      .padding()
     }
-  }
+    
+    private func checkAuth() {
+        let credentialsManager = CredentialsManager(authentication: Auth0.authentication())
+        credentialsManager.credentials { result in
+            switch result {
+            case .success:
+                isAuthenticated = true
+            case .failure:
+                isAuthenticated = false
+            }
+        }
+    }
 }
 
 #Preview {
-  ContentView()
+    ContentView()
 }

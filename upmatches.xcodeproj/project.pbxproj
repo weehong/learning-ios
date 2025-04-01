@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ADA4C2422D986B40008FABFB /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = ADA4C2412D986B40008FABFB /* Auth0 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AD58A8092D8FB3F500A20FCC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA4C2422D986B40008FABFB /* Auth0 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = upmatches;
 			packageProductDependencies = (
+				ADA4C2412D986B40008FABFB /* Auth0 */,
 			);
 			productName = upmatches;
 			productReference = AD58A7F72D8FB3F400A20FCC /* upmatches.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = AD58A7EE2D8FB3F400A20FCC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				ADA4C2402D986B40008FABFB /* XCRemoteSwiftPackageReference "Auth0" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AD58A7F82D8FB3F400A20FCC /* Products */;
 			projectDirPath = "";
@@ -610,6 +619,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADA4C2402D986B40008FABFB /* XCRemoteSwiftPackageReference "Auth0" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADA4C2412D986B40008FABFB /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADA4C2402D986B40008FABFB /* XCRemoteSwiftPackageReference "Auth0" */;
+			productName = Auth0;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD58A7EF2D8FB3F400A20FCC /* Project object */;
 }
